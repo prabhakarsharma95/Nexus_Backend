@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #2563eb;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      color: white;
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+      background-color: #f9fafb;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .button {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    .info-box {
+      background-color: white;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 4px solid #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Application Submitted</h1>
+    </div>
+    <div class="content">
+      <p>Hello {{userName}},</p>
+      
+      <p>Thank you for applying to the <strong>{{jobTitle}}</strong> position at <strong>{{companyName}}</strong>. Your application has been successfully submitted on {{applicationDate}}.</p>
+      
+      <div class="info-box">
+        <p><strong>Job:</strong> {{jobTitle}}</p>
+        <p><strong>Company:</strong> {{companyName}}</p>
+        <p><strong>Application Date:</strong> {{applicationDate}}</p>
+      </div>
+      
+      <p>The employer will review your application and get back to you soon. You can track the status of your application in your dashboard.</p>
+      
+      <p>
+        <a href="{{dashboardLink}}" class="button">View Your Applications</a>
+      </p>
+      
+      <p>If you have any questions, please don't hesitate to contact us.</p>
+      
+      <p>Best regards,<br>The PlacementIndia Team</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 PlacementIndia. All rights reserved.</p>
+      <p>This is an automated email, please do not reply.</p>
+    </div>
+  </div>
+</body>
+</html>
